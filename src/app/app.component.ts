@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  inputs = [{task: ''}];
+  addNewInput() {
+    this.inputs.push({task: ''});
+  }
+  removeTask(task) {
+    if (this.inputs.indexOf(task) !== -1) {
+        const index = this.inputs.indexOf(task);
+        this.inputs.splice(index, 1);
+    }
+  }
 }

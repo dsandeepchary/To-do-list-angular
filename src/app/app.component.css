@@ -1,0 +1,13 @@
+.container {
+    padding: 10% 22%;
+}
+.form-group {
+    margin-top: 15px;
+}
+input[type=text] {
+    border-radius: 0px;
+    border: 1px solid white;
+}
+.btn {
+    cursor: pointer;
+}
