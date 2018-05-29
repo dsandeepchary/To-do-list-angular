@@ -6,9 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  inputs = [{task: ''}];
+  inputs = [{task: '', isImportant: false}];
   addNewInput() {
-    this.inputs.push({task: ''});
+    this.inputs.push({task: '', isImportant: false});
+  }
+  markImportant(task) {
+    if (this.inputs.indexOf(task) !== -1) {
+        const taskIndex = this.inputs.indexOf(task);
+        this.inputs[taskIndex].isImportant = !(task.isImportant);
+    }
   }
   removeTask(task) {
     if (this.inputs.indexOf(task) !== -1) {

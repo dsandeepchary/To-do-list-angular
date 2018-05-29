@@ -1,13 +1,23 @@
 .container {
-    padding: 10% 22%;
+    padding: 10% 10% 10% 15%;
 }
 .form-group {
     margin-top: 15px;
 }
-input[type=text] {
+.input-style {
     border-radius: 0px;
-    border: 1px solid white;
+    border-bottom: 3px solid #B10064;
+}
+.input-style:focus {
+    background-color: #D5FE00;
 }
 .btn {
     cursor: pointer;
+}
+.btn:hover {
+    background-color: #000;
+}
+.color-hover:hover {
+    color: #B10064;
+    background-color: #000;
 }
