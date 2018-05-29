@@ -1,22 +1,22 @@
 <button class="btn color-hover btn-outline-light rounded-0 border-0 btn-lg pull-right"><span class="fa fa-adjust"></span></button>
 <div class="container">
     <div class="row">
-        <div class="col-sm-9">
+        <div class="col-9">
             <h3 class="text-light">To Do List</h3>
         </div>
-        <div class="col-sm-3">
+        <div class="col-3">
             <button class="btn btn-outline-light color-hover rounded-0 border-0" (click)="addNewInput();"><span class="fa fa-plus"></span></button>
         </div>
     </div>
     <div class="input row form-group" *ngFor="let input of inputs">
-        <div class="col-sm-8">
+        <div class="col-8">
             <input type="text" name="task" placeholder="List down a task" id="task" [(ngModel)]="input.task" class="form-control input-style">
         </div>
-        <div class="col-sm-1">
+        <div class="col-1">
             <button *ngIf="input.isImportant === false" class="btn btn-outline-light rounded-0 border-0" (click)="markImportant(input)"><span class="fa fa-star"></span></button>
             <button *ngIf="input.isImportant === true" class="btn btn-outline-light rounded-0 border-0" (click)="markImportant(input)"><span class="fa fa-star" style="color: #B10064;"></span></button>
         </div>
-        <div class="col-sm-1">
+        <div class="col-1">
             <button class="color-hover btn btn-outline-light rounded-0 border-0" (click)="removeTask(input)"><span class="fa fa-check"></span></button>
         </div>
     </div>
