@@ -1,3 +1,9 @@
+.night-mode {
+    background-color: #000;
+}
+.day-mode {
+    background-color: #fff;
+}
 .container {
     padding: 10% 10% 10% 15%;
 }
@@ -14,10 +20,19 @@
 .btn {
     cursor: pointer;
 }
-.btn:hover {
+.imp-night:hover {
     background-color: #000;
+    color: #B10064;
 }
-.color-hover:hover {
+.imp-day:hover {
+    background-color: #fff;
+    color: #B10064;
+}
+.night-color-hover:hover {
     color: #B10064;
     background-color: #000;
+}
+.day-color-hover:hover {
+    color: #B10064;
+    background-color: #fff;
 }
