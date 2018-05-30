@@ -1,7 +1,9 @@
 .night-mode {
+    height: 700px;
     background-color: #000;
 }
 .day-mode {
+    height: 700px;
     background-color: #fff;
 }
 .container {
