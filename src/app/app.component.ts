@@ -7,7 +7,7 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
     inputs = [{task: '', isImportant: false}];
-    isNightMode = false;
+    isNightMode = true;
     importantClass = 'btn btn-outline-light rounded-0 border-0';
     headingClass = 'text-light';
     addClass = 'btn btn-outline-light night-color-hover rounded-0 border-0';
