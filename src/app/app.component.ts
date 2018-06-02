@@ -35,6 +35,9 @@ export class AppComponent {
 
     toggleMode() {
         this.isNightMode = !this.isNightMode;
+  	this.changeColor();
+    }
+    changeColor() {
         if (this.isNightMode === true) {
             this.headingClass = 'text-light';
             this.importantClass = 'btn btn-outline-light imp-night rounded-0 border-0';
@@ -51,4 +54,5 @@ export class AppComponent {
             this.adjustClass = 'btn day-color-hover btn-outline-dark rounded-0 border-0 btn-lg pull-right';
         }
     }
+   }
 }
