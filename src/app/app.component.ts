@@ -1,11 +1,11 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
     inputs = [{task: '', isImportant: false}];
     isNightMode = true;
     importantClass = 'btn btn-outline-light rounded-0 border-0';
@@ -14,6 +14,10 @@ export class AppComponent {
     tickClass = 'night-color-hover btn btn-outline-light rounded-0 border-0';
     mainClass = 'night-mode';
     adjustClass = 'btn night-color-hover btn-outline-light rounded-0 border-0 btn-lg pull-right';
+    
+    ngOnInit() {
+        this.changeColor();
+    }
 
     addNewInput() {
         this.inputs.push({task: '', isImportant: false});
